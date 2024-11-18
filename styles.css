@@ -85,6 +85,41 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Profile Picture */
+header img {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #f39c12; /* Golden orange */
+    object-fit: cover; /* Ensures aspect ratio is maintained */
+}
+
+/* Project Card Images */
+.project-card img {
+    max-width: 300px; /* Maximum width of 300px */
+    max-height: 200px; /* Maximum height of 200px */
+    width: 100%; /* Make it responsive */
+    height: auto; /* Preserve aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensures images look cropped instead of stretched */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header img {
+        width: 120px; /* Smaller size for mobile */
+        height: 120px;
+    }
+
+    .project-card img {
+        max-width: 100%; /* Scale down for smaller screens */
+        max-height: 150px;
+    }
+}
+
 /* Project Cards */
 .project-card {
     display: flex;
