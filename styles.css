@@ -129,13 +129,6 @@ img {
 .hero .tagline {
     font-size: 1.25rem;
     font-weight: 500;
-    margin: 0 0 6px;
-}
-
-.hero .subtitle {
-    font-size: 1rem;
-    font-weight: 400;
-    opacity: 0.9;
     margin: 0 0 24px;
 }
 
@@ -355,6 +348,27 @@ h2::after {
 }
 
 /* ------------------------------------------------------------------
+   Project groups and compact list card
+   ------------------------------------------------------------------ */
+.group-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ocean);
+    margin: 28px 0 14px;
+}
+
+.group-title:first-of-type {
+    margin-top: 4px;
+}
+
+.group-title i {
+    color: var(--sunset-a);
+}
+
+/* ------------------------------------------------------------------
    Contact
    ------------------------------------------------------------------ */
 .contact-icons {
@@ -455,5 +469,11 @@ footer p {
 
     .card-media-embed {
         height: 360px;
+    }
+
+    .site-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
     }
 }

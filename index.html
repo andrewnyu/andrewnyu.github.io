@@ -21,7 +21,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andrew Yu — data scientist and developer building geospatial, AI, and product tools from the Philippines and Southeast Asia.">
+    <meta name="description" content="Andrew Yu — data scientist and software engineer from the Philippines who enjoys building things with code, AI, and mathematics.">
     <title>Andrew Yu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,6 @@
         <img src="pics/profile-pic.png" alt="Andrew Yu" class="avatar">
         <h1>Andrew Yu</h1>
         <p class="tagline">Living life one software project at a time</p>
-        <p class="subtitle">Data scientist &amp; developer · geospatial, AI, and product</p>
         <ul class="hero-links">
             <li><a href="https://github.com/andrewnyu" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/andrew-yu-872b64156/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
@@ -62,15 +61,23 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Born and raised in a mid-sized city in the islands of Central Philippines, I grew up witnessing how technology could bridge gaps and transform lives.
-                This inspired my journey as a data scientist and developer, where I've built AI-powered solutions leveraging geospatial, demographic, and shopper data.
-                I have also led product strategy across Southeast Asia and ANZ, driving impactful business and consumer outcomes.
-                I am privileged to have had a diverse set of experiences, having lived, worked and played football in 5 (and hopefully counting) cities.
+                I grew up in the Philippines, where I saw firsthand how technology can bridge gaps and transform lives.
+                That inspired my path as a data scientist and developer, building models and tools on geospatial,
+                demographic, and shopper data. I have lived in Manila and Singapore and worked across different fields,
+                from data science and software engineering to product strategy for Southeast Asia and Australia.
+            </p>
+            <p>
+                I'm now interested in research and open-source work at the intersection of ML, geospatial data, and LLMs.
+                I am privileged to have had a diverse set of experiences, having lived, worked, and played football in five
+                (and hopefully counting) cities.
             </p>
         </section>
 
+
         <section id="projects">
             <h2>Projects</h2>
+
+            <h3 class="group-title"><i class="fas fa-earth-asia"></i> Data science &amp; geospatial</h3>
             <ul class="project-grid">
 
                 <li class="project-card">
@@ -111,7 +118,7 @@
                         <img src="pics/whereph.png" alt="Where PH screenshot" loading="lazy">
                     </a>
                     <div class="card-body">
-                        <div class="card-tags"><span>Geospatial</span><span>Web app</span></div>
+                        <div class="card-tags"><span>Geospatial</span><span>GeoPandas</span><span>Web app</span></div>
                         <h3>Where PH</h3>
                         <p>Web app that uses a geospatial join to map a set of coordinates to detailed location information (village, city, province).
                             Includes an authentication and credits module enabling batch upload for registered users.
@@ -130,10 +137,50 @@
                         <div class="card-tags"><span>Python package</span><span>Optimization</span></div>
                         <h3>Scipy Optimstruct</h3>
                         <p>Python package that simplifies defining variables and constraints for optimization problems with the SciPy
-                            optimization module, making it easier to organize and solve structured problems.</p>
+                            optimization module, making it easier to organize and solve structured problems. Published on PyPI.</p>
                         <div class="card-links">
                             <a href="https://github.com/andrewnyu/scipy-optimstruct" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                             <a href="https://pypi.org/project/scipy-optimstruct/" target="_blank" rel="noopener"><i class="fab fa-python"></i> PyPI</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <a href="https://fifa-network.vercel.app/" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/fifa-network.png" alt="Six Degrees of FIFA Separation network graph" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Graph theory</span><span>Football</span></div>
+                        <h3>Six Degrees of FIFA Separation</h3>
+                        <p>Analyzed a network of 41k+ players and millions of connections across FIFA 15–21 with union-find and BFS,
+                            validating the small-world phenomenon in professional football and discovering Allan Nyom as the most connected player.
+                            Now playable as <em>The Pass</em>: connect any two players through their shared teammates.</p>
+                        <div class="card-links">
+                            <a href="https://fifa-network.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-futbol"></i> Play The Pass</a>
+                            <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank" rel="noopener"><i class="fab fa-kaggle"></i> Notebook</a>
+                            <a href="https://github.com/andrewnyu/fifa-network" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <h3 class="group-title"><i class="fas fa-code"></i> Software</h3>
+            <ul class="project-grid">
+
+                <li class="project-card">
+                    <a href="https://bacolod-outage-map.vercel.app" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/bacolod-outage-map.jpg" alt="Bacolod Outage Map with feeder zones and a time scrubber" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>JavaScript</span><span>Maps</span><span>Civic</span></div>
+                        <h3>Bacolod Outage Map</h3>
+                        <p>One-page map of Negros Power feeder outages across the Bacolod metro. Drag the time scrubber to watch zones drop
+                            during rotational brownouts, search your street, or locate yourself to find which feeder you're on.
+                            Data scraped from the utility's public schedules.</p>
+                        <div class="card-links">
+                            <a href="https://bacolod-outage-map.vercel.app" target="_blank" rel="noopener"><i class="fas fa-bolt"></i> Live map</a>
+                            <a href="https://github.com/andrewnyu/bacolod-outage-map" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -146,26 +193,31 @@
                             title="Ilonggle App"></iframe>
                     </div>
                     <div class="card-body">
-                        <div class="card-tags"><span>Game</span><span>Ilonggo</span></div>
+                        <div class="card-tags"><span>TypeScript</span><span>Game</span><span>Ilonggo</span></div>
                         <h3>Ilonggle</h3>
                         <p>Wordle clone in the Ilonggo language that reached 2,000 users across 20 countries.
                             Built a web scraper to assemble an Ilonggo dictionary from trusted sources and hand-picked the final word list.</p>
                         <div class="card-links">
                             <a href="https://ilonggle.web.app" target="_blank" rel="noopener"><i class="fas fa-gamepad"></i> Hampang ta Ilonggle!</a>
+                            <a href="https://github.com/andrewnyu/ilonggle" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </li>
 
                 <li class="project-card">
-                    <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank" rel="noopener" class="card-media">
-                        <img src="pics/fifa-network.png" alt="Six Degrees of FIFA Separation network graph" loading="lazy">
+                    <a href="https://github.com/andrewnyu/ngon-game" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/ngon-game.jpg" alt="Grid of regular N-gon letter tiles, colored by number of sides" loading="lazy">
                     </a>
                     <div class="card-body">
-                        <div class="card-tags"><span>Graph theory</span><span>Football</span></div>
-                        <h3>Six Degrees of FIFA Separation</h3>
-                        <p>Used graph theory to analyze football player connections across FIFA 15–21, discovering Allan Nyom as the most connected player.</p>
+                        <div class="card-tags"><span>Java</span><span>Swing</span><span>Geometry</span></div>
+                        <h3>NGon Word Game</h3>
+                        <p>Word game from a college class where every letter tile is a regular <em>n</em>-gon, <em>n</em> ∈ [4, 16], and
+                            <em>n</em> is also the tile's score. Each polygon is constructed from a target area: side length
+                            <em>s</em> = √(2·A·tan(π/<em>n</em>)/<em>n</em>), apothem <em>a</em> = <em>s</em> / (2·tan(π/<em>n</em>)),
+                            then vertices are walked from the top by turning 2π/<em>n</em> per edge. The apothem doubles as the hit-test
+                            radius for clicks, and tile color is a red–blue gradient in <em>n</em>.</p>
                         <div class="card-links">
-                            <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank" rel="noopener"><i class="fab fa-kaggle"></i> Notebook</a>
+                            <a href="https://github.com/andrewnyu/ngon-game" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </li>
@@ -173,12 +225,13 @@
             </ul>
         </section>
 
+
         <section id="talks">
             <h2>Talks</h2>
             <ul class="project-grid">
                 <li class="project-card project-card-wide">
                     <a href="https://github.com/andrewnyu/ph-ioai-geospatial-lecture" target="_blank" rel="noopener" class="card-media">
-                        <img src="pics/ioai-geospatial.jpg" alt="Map of weather stations across Negros Island used in the lecture" loading="lazy">
+                        <img src="pics/ioai-kanlaon.jpg" alt="Barangays of Negros Island intersecting the 8 km Mt. Kanlaon danger zone" loading="lazy">
                     </a>
                     <div class="card-body">
                         <div class="card-tags"><span>Lecture</span><span>Geospatial AI</span><span>2026</span></div>
