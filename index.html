@@ -10,85 +10,189 @@
     })(window,document,'script','dataLayer','GTM-5M2W64PG');</script>
     <!-- End Google Tag Manager -->
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECQD54Z96N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ECQD54Z96N');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrew Yu — data scientist and developer building geospatial, AI, and product tools from the Philippines and Southeast Asia.">
     <title>Andrew Yu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M2W64PG"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header>
-        <img src="pics/profile-pic.png" alt="Profile Picture">
-        <h1>Andrew Yu</h1>
-        <p>Living life one software project at a time</p>
-    </header>
-
-    <nav>
+    <nav class="site-nav">
+        <a href="#top" class="brand">Andrew Yu</a>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#talks">Talks</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
+    <header id="top" class="hero">
+        <img src="pics/profile-pic.png" alt="Andrew Yu" class="avatar">
+        <h1>Andrew Yu</h1>
+        <p class="tagline">Living life one software project at a time</p>
+        <p class="subtitle">Data scientist &amp; developer · geospatial, AI, and product</p>
+        <ul class="hero-links">
+            <li><a href="https://github.com/andrewnyu" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/andrew-yu-872b64156/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.kaggle.com/andnyu" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a></li>
+        </ul>
+    </header>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Born and raised in a mid-sized city in the islands of Central Philippines, I grew up witnessing how technology could bridge gaps and transform lives. 
-                This inspired my journey as a data scientist and developer, where I’ve built AI-powered solutions leveraging geospatial, demographic, and shopper data. 
+                Born and raised in a mid-sized city in the islands of Central Philippines, I grew up witnessing how technology could bridge gaps and transform lives.
+                This inspired my journey as a data scientist and developer, where I've built AI-powered solutions leveraging geospatial, demographic, and shopper data.
                 I have also led product strategy across Southeast Asia and ANZ, driving impactful business and consumer outcomes.
-                I am priviledged to have had a diverse set of experiences, having lived, worked and played football in 5 (and hopefully counting) cities.
+                I am privileged to have had a diverse set of experiences, having lived, worked and played football in 5 (and hopefully counting) cities.
             </p>
-            
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li class="project-card">
-                    <img src="pics/whereph.png" alt="Where PH Screenshot">
-                    <h3>Where PH</h3>
-                    <p>Built a web app which used geospatial join to map a set of coordinates to detailed location information (village, city, province). 
-                        Also implemented authentication & credits module that enabled batch upload for registered users. 
-                        Project saved 100+ labor hours and was used across multiple area mapping projects.</p>
-                    <a href="https://github.com/andrewnyu/whereph" target="_blank">View on GitHub</a>
-                </li>
-                <li class="project-card">
-                    <img src="pics/scipy-optimstruct.jpg" alt="Scipy Optimstruct Screenshot">
-                    <h3>Scipy Optimstruct</h3>
-                    <p>scipy-optimstruct is a Python package that simplifies the implementation of variables and constraints for optimization problems 
-                        using the SciPy optimization module. It provides a convenient way to define and manage problem structures, making it easier to solve optimization problems.</p>
-                    <a href="https://github.com/andrewnyu/scipy-optimstruct" target="_blank">View on GitHub</a>
-                    <a href="https://pypi.org/project/scipy-optimstruct/" target="_blank">View on PyPI</a
-                </li>
-                <li class="project-card">
-                        <iframe 
-                        src="https://ilonggle.web.app/" 
-                        width="100%" 
-                        height="500" 
-                        loading="lazy"
-                        style="border: none; border-radius: 8px;"
-                        title="Ilonggle App">
-                    </iframe>
+            <ul class="project-grid">
 
-                    <h3>Ilonggle</h3>
-                    <p>Wordle clone using Ilonggo language that reached 2000 users across 20 countries.
-                    Build a webscraper to build Ilonggo dictionary from trusted sources and personally selected final word list.</p>
-                    <a href="https://ilonggle.web.app" target="_blank">Hampang ta Ilonggle!</a>
-                </li>
                 <li class="project-card">
-                    <img src="pics/fifa-network.png" alt="Six Degrees of FIFA Separation Graph">
-                    <h3>Six Degrees of FIFA Separation</h3>
-                    <p>Used graph theory to analyze football player connections, discovering Allan Nyom as the most connected player.</p>
-                    <p><i>Stay tuned for the FIFA 2024 update</i></p>
-                    <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank">View Python Notebook</a>
+                    <a href="https://metro-mapping.vercel.app" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/metro-mapping.jpg" alt="Delineated metro footprint of Dumaguete City over satellite imagery" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Geospatial</span><span>Python</span><span>MapLibre</span></div>
+                        <h3>Metro-Mapping</h3>
+                        <p>Open-data pipeline that delineates the functional metro area of any Philippine city on an H3 hex grid.
+                            Combines OpenStreetMap establishments and roads, WorldPop population, and a CBD-connectivity rule to produce a
+                            reproducible built-up footprint, calibrated against GHSL and validated on held-out cities. Ships as a static web map.</p>
+                        <div class="card-links">
+                            <a href="https://metro-mapping.vercel.app" target="_blank" rel="noopener"><i class="fas fa-map"></i> Live map</a>
+                            <a href="https://github.com/andrewnyu/metro-mapping" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <a href="https://github.com/andrewnyu/alto" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/alto.jpg" alt="ALTO generated skyline view of Dumaguete, Negros Oriental" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>GenAI</span><span>FastAPI</span><span>Next.js</span></div>
+                        <h3>ALTO</h3>
+                        <p>Skyline view synthesis for real estate and urban planning, built for the SG DeepMind Hackathon.
+                            Pick an address, storey, heading, and time of day; ALTO stacks Street View, satellite, and elevation context,
+                            derives a deterministic lighting profile, and prompts Gemini to render what the view would look like before it exists.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/andrewnyu/alto" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <a href="https://github.com/andrewnyu/whereph" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/whereph.png" alt="Where PH screenshot" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Geospatial</span><span>Web app</span></div>
+                        <h3>Where PH</h3>
+                        <p>Web app that uses a geospatial join to map a set of coordinates to detailed location information (village, city, province).
+                            Includes an authentication and credits module enabling batch upload for registered users.
+                            Saved 100+ labor hours across multiple area mapping projects.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/andrewnyu/whereph" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <a href="https://github.com/andrewnyu/scipy-optimstruct" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/scipy-optimstruct.jpg" alt="Scipy Optimstruct screenshot" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Python package</span><span>Optimization</span></div>
+                        <h3>Scipy Optimstruct</h3>
+                        <p>Python package that simplifies defining variables and constraints for optimization problems with the SciPy
+                            optimization module, making it easier to organize and solve structured problems.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/andrewnyu/scipy-optimstruct" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://pypi.org/project/scipy-optimstruct/" target="_blank" rel="noopener"><i class="fab fa-python"></i> PyPI</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <div class="card-media card-media-embed">
+                        <iframe
+                            src="https://ilonggle.web.app/"
+                            loading="lazy"
+                            title="Ilonggle App"></iframe>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Game</span><span>Ilonggo</span></div>
+                        <h3>Ilonggle</h3>
+                        <p>Wordle clone in the Ilonggo language that reached 2,000 users across 20 countries.
+                            Built a web scraper to assemble an Ilonggo dictionary from trusted sources and hand-picked the final word list.</p>
+                        <div class="card-links">
+                            <a href="https://ilonggle.web.app" target="_blank" rel="noopener"><i class="fas fa-gamepad"></i> Hampang ta Ilonggle!</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-card">
+                    <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/fifa-network.png" alt="Six Degrees of FIFA Separation network graph" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Graph theory</span><span>Football</span></div>
+                        <h3>Six Degrees of FIFA Separation</h3>
+                        <p>Used graph theory to analyze football player connections across FIFA 15–21, discovering Allan Nyom as the most connected player.</p>
+                        <div class="card-links">
+                            <a href="https://www.kaggle.com/code/andnyu/six-degrees-of-fifa-15-21-separation" target="_blank" rel="noopener"><i class="fab fa-kaggle"></i> Notebook</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="talks">
+            <h2>Talks</h2>
+            <ul class="project-grid">
+                <li class="project-card project-card-wide">
+                    <a href="https://github.com/andrewnyu/ph-ioai-geospatial-lecture" target="_blank" rel="noopener" class="card-media">
+                        <img src="pics/ioai-geospatial.jpg" alt="Map of weather stations across Negros Island used in the lecture" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <div class="card-tags"><span>Lecture</span><span>Geospatial AI</span><span>2026</span></div>
+                        <h3>Geospatial Data and its Applications for AI</h3>
+                        <p class="card-meta">PH International Olympiad in Artificial Intelligence (IOAI) Training Pool</p>
+                        <p>A practical lecture for the Philippine IOAI team on how to think about location as a feature: vector vs raster data,
+                            coordinate reference systems, spatial joins, and raster sampling, with a hands-on notebook localized to
+                            Negros Island weather and elevation data. Ends with where the field is heading: geospatial embeddings and self-study paths.</p>
+                        <div class="card-links">
+                            <a href="https://github.com/andrewnyu/ph-ioai-geospatial-lecture/blob/main/PH%20IOAI%20Training%20Pool%20-%20Geospatial%20AI%20Lecture.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> Slides</a>
+                            <a href="https://github.com/andrewnyu/ph-ioai-geospatial-lecture/blob/main/lecture_playground.ipynb" target="_blank" rel="noopener"><i class="fas fa-book"></i> Notebook</a>
+                            <a href="https://github.com/andrewnyu/ph-ioai-geospatial-lecture" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -97,25 +201,15 @@
             <h2>Contact</h2>
             <p>If you'd like to get in touch, feel free to reach out via the links below.</p>
             <ul class="contact-icons">
-                <li><a href="https://www.linkedin.com/in/andrew-yu-872b64156/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/andrewnyu" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/andrew-yu-872b64156/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/andrewnyu" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.kaggle.com/andnyu" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a></li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Andrew Yu. All rights reserved.</p>
+        <p>&copy; 2026 Andrew Yu. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECQD54Z96N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ECQD54Z96N');
-</script>
